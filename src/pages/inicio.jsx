@@ -13,6 +13,7 @@ export function Inicio() {
       >
         Acerca
       </NavLink>
+
       <NavLink
         to="ubicaciones"
         style={({ isActive }) => {
@@ -21,6 +22,7 @@ export function Inicio() {
       >
         Ubicaciones
       </NavLink>
+
       <NavLink
         to="productos"
         style={({ isActive }) => {
@@ -29,6 +31,16 @@ export function Inicio() {
       >
         Productos
       </NavLink>
+
+      <NavLink
+        to="invoices"
+        style={({ isActive }) => {
+          return { color: isActive ? 'orange' : '#fff' }
+        }}
+      >
+        Invoices
+      </NavLink>
+
       <Outlet />
     </div>
   )
